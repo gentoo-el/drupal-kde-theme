@@ -1,0 +1,13 @@
+; $Id: dotkde.info,v 0.5 2008/09/08 23:27:32 goba Exp $
+name = dotkde
+description = Theme for dotkde created by philip@amparose.com
+version = VERSION
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = style.css
+stylesheets[print][] = print.css
+
+scripts[] = js/jquery.corner.js
+scripts[] = js/roundit.js
+scripts[] = js/searchform.js
+

@@ -1,0 +1,32 @@
+/* $Id: fix-ie.css,v 1.8.2.1 2008/02/05 09:27:26 goba Exp $ */
+
+/* Search box */
+
+div#searchTainer {
+height: 26px;
+background: transparent url(images/searchBox.gif) no-repeat right top;
+}
+
+div#searchTainer div#search label { display: none; }
+
+div#searchTainer #edit-search-theme-form-1 {
+margin: 0; padding: 0;
+position: relative; top: -4px;
+width: 160px ; height: 13px;
+background: #d6d6d6;
+border: none;
+}
+
+div#searchFloat { float: right; width: 220px; }
+
+div#searchTainer #edit-submit,div#searchTainer #edit-submit-1 {
+width: 28px; height: 22px;
+cursor: pointer;
+font-size: 0;
+color: #b9b9b9;
+text-align: right;
+border: none;
+background: url(images/searchSubmit.gif) no-repeat left top;
+}
+
+div#main span.submitted { display: block; margin: 0 0 15px 0; padding: 0; }

@@ -1,0 +1,482 @@
+/*
+Theme Name: Dot KDE
+Description: dot kde website
+Version: 0.5
+Author: Philip Tyrer
+Author URI: http://amparose.com/
+*/
+
+body, html {
+margin: 0px; padding: 0px; text-align: center;
+font-family:verdana, sans-serif; font-size:85%; line-height: 20px;
+background: #949494; color: #313131;
+}
+
+h1 { font-size: 200%; margin: 0.8em 0 0.65em 0; padding: 0;
+font-family: Arial, sans-serif;
+letter-spacing: 1px;
+color: #00218b;
+clear: left;
+}
+h2 { font-size: 150%; margin: 1.5em 0 0 0; padding: 0;
+font-family: "Trebuchet MS", Arial, sans-serif;
+letter-spacing: 1px;
+color: #2e6fb4;
+}
+h2 a:link { color: #2e6fb4; } h2 a:hover { color: #005610; }
+h3 { font-size: 120%; margin: 1em 0 0.9em 0; padding: 0; }
+h4 { font-size: 100%; margin: 1.3em 0 0.9em 0; padding: 0; }
+h5 { font-size: 90%%; margin: 0.8em 0 0.85em 0; padding: 0; }
+h6 { font-size: 70%; margin: 0.5em 0 0.85em 0; padding: 0; }
+
+a { outline: none; text-decoration: none; }
+a:link { text-decoration: none; color: #2e6fb4; }
+a:visited {}
+a:hover,a:active { color: #005610; }
+
+
+img { border: none; }
+
+/* Layout
+--------------------------------------------------------------------------------*/
+
+div#header {
+margin: 0px auto 0px auto; padding: 9px 0 0 0;
+width: 876px;
+text-align: left;
+position: relative;
+background: transparent url(images/topBar.jpg) no-repeat;
+}
+
+div#topnav {
+padding-top: 10px;
+padding-bottom: 10px;
+vertical-align: middle;
+}
+
+div#topnav img {
+vertical-align: middle;
+}
+
+div#topnav ul {
+display: inline;
+}
+
+div#midTainer {
+background: #ffffff url(images/topTile.gif) repeat-x top;
+}
+
+div.contentCentre,div#searchTainer {
+margin: 0px auto 0px auto; padding: 0px;
+width: 816px;
+text-align: left;
+}
+
+div#botMenu {
+background: #ffffff url(images/botTile.gif) repeat-x bottom;
+clear: both;
+height: 57px;
+}
+
+div#kdeTitle {
+margin: 0 0 0 28px; padding: 0;
+}
+
+div#logo {
+position: absolute; right: 37px; top: 4px;
+}
+
+div#main {
+float: left;
+width: 540px;
+}
+
+body.none div#main {
+  float: left;
+  width: 100%;
+}
+
+div#content {
+  clear: both;
+}
+
+div.error, tr.error {
+  background:#FFCCCC none repeat scroll 0 0;
+  color:#220000;
+  padding:2px;
+}
+
+/* side bar */
+
+div#sidebar {
+margin: 10px 0 0 0; padding: 0;
+float: right;
+width: 257px;
+}
+
+div#sidebar h1 {
+margin: 0 0 0 10px; padding: 3px 0 0 0;
+font-size: 110%;
+color: #333333;
+}
+
+div.box { margin: 20px 0 0 0; padding: 0; }
+
+div.top { 
+height: 25px;
+background: transparent url(images/sideBarTop.png) no-repeat top;
+}
+
+div.mid {
+background: #f8f8f8 url(images/sideBarTile.gif) repeat-y;
+margin-top: -1px;
+}
+
+div.bot {
+background: transparent url(images/sideBot.gif) no-repeat bottom;
+height: 1px;
+}
+
+div.mid p,div.mid ul,div.mid ol { margin: 0 5px 0 15px; padding: 0; list-style: none; }
+
+/* footer */
+
+div#footer {
+margin: 0; padding: 0 0 10px 0;
+text-align: left;
+background: transparent url(images/footer-image.jpg) no-repeat right 20px;
+}
+
+div#footTile {
+height: 21px; width: 100%;
+background: transparent url(images/footerTile.gif) repeat-x top;
+}
+
+div#footer p { margin: 0; padding: 0; }
+
+div.node {
+position:relative;
+}
+
+div.taxonomy-images {
+position: absolute;
+top: 70px;
+left: -63px;
+}
+
+
+/* Front page and calendar (not active atm because of markup)
+--------------------------------------------------------------------------------*/
+
+/* entry and right hand details */
+
+div.entry {
+position: relative;
+}
+
+div.entry div.entryDetails {
+float: left; margin-left: -70px; /* allows for short posts to be cleared by h1 */
+}
+
+div.entry div.entryDetails span {
+display: block;
+}
+
+div.entry div.entryDetails div {
+background: #f1f1f0;
+border: 1px solid #c7c8c3;
+color: #696a66;
+text-align: center;
+}
+
+span.year,span.day,span.month {
+margin: 0; padding: 0 8px 0 8px;
+letter-spacing: 1px;
+}
+
+span.year {
+font-size: 85%;
+}
+
+span.day {
+margin: 3px 0 2px 0;
+font-size: 155%;
+font-weight: bold;
+}
+
+span.month {
+font-size: 95%;
+font-weight: bold;
+}
+
+span.category {
+margin: 15px 0 0 0; padding: 0;
+}
+
+div.date-block {
+background: url(images/date-background.png) top left no-repeat;
+width: 44px;
+height: 55px;
+text-align:center;
+line-height: 16px;
+position: absolute;
+top: 5px;
+left: -60px;
+}
+
+/* Menu
+--------------------------------------------------------------------------------*/
+
+div#header ul {
+margin: 10px 0 5px 30px; padding: 0px;
+list-style: none;
+}
+
+div#header ul li,div#botMenu ul li {
+margin: 0 20px 0 0; padding: 0;
+display: inline;
+}
+
+div#botMenu ul {
+margin: 0; padding: 20px 0 10px 0;
+list-style: none;
+}
+
+div#header ul li a,div#botMenu ul li a {
+padding-bottom: 3px;
+}
+
+div#header ul li a:link,div#header ul li a:visited,div#botMenu ul li a:link,div#botMenu ul li a:visited {
+color: #222266;
+}
+
+div#header ul li a:hover,div#header ul li a:active,div#botMenu ul li a:hover,div#botMenu ul li a:active {
+color: #005610;
+border-bottom: 5px solid #009210;
+}
+
+/* tabs */
+
+.tabs {
+margin: 0 0 10px 0; padding: 0 0 1px 0;
+float: left;
+width: 100%;
+background: transparent url(images/tabBot.png) no-repeat bottom;
+}
+
+.tabs li {
+margin: 0 5px 1px 0; padding: 0;
+list-style: none;
+float: left;
+background: transparent url(images/tab_images2b.gif) no-repeat right top;
+}
+
+.tabs a {
+margin: 0; padding: 5px 15px 0px 15px;
+display: block;
+background: transparent url(images/tab_images1b.gif) no-repeat left top;
+}
+
+#main ul.secondary li {
+  padding: 0;
+  border: 0;
+}
+
+#main ul.secondary a {
+  padding:5px 15px 0;
+  border: 0;
+}
+
+#main ul.secondary {
+ border: 0;
+ margin: 0;
+ padding: 0;
+}
+
+/* Forms
+--------------------------------------------------------------------------------*/
+
+.form-item { margin-top: 0; }
+
+/* Search box */
+
+div#searchTainer {
+height: 26px;
+background: transparent url(images/searchBox.gif) no-repeat right top;
+}
+
+div#searchTainer div#search label { display: none; }
+
+div#searchTainer #edit-search-theme-form-1 {
+  margin: 0;
+  padding: 0;
+  width: 160px ;
+  height: 17px;
+  background: #d6d6d6;
+  border: 1px #949494 solid;
+}
+
+div#searchFloat { float: right; width: 220px; }
+
+div#searchTainer #edit-submit,div#searchTainer #edit-submit-1 {
+width: 28px; height: 22px;
+cursor: pointer;
+text-indent: -9999px;
+border: none;
+background: url(images/searchSubmit.gif) no-repeat left top;
+}
+
+div.service-label {
+  display: none;
+}
+
+/* Misc
+--------------------------------------------------------------------------------*/
+
+/* msgs */
+
+div.error {
+clear: left;
+}
+
+.submitted {
+  font-size: 110%;
+  color: #2e6fb4;
+  display: block;
+  width: 320px;
+}
+
+
+div.status {
+  color: #33a333;
+  border:1px solid #C7F2C8;
+}
+
+div.messages {
+  margin: 10px;
+  padding: 5px;
+}
+/* comments
+--------------------------------------------------------------------------------*/
+
+div#comments {
+margin: 0; 
+padding: 0;
+padding-bottom: 5px;
+background: #d5d6d5;
+}
+
+div#comments div.links {
+  margin-left: 5px;
+}
+
+div#comments .comment {
+margin: 0 10px 10px 10px; padding: 0;
+background: #f8f8f8;
+position: relative;
+}
+
+.comment .comment-score-div {
+position: absolute;
+top: 0px;
+margin-top: 5px;
+right: 5px;
+}
+
+.comment .comment-voting-controls {
+position: absolute; right: 50px; top: 3px;
+margin-top: 2px;
+}
+
+#comments .comment ul.links {
+margin: 0px;
+}
+
+#comments .indented {
+border-left: 0px;
+}
+
+#comments .comment {
+}
+
+div#comments .submitted {
+  margin-left: 10px;
+}
+
+/* comment content */
+
+div#comments h2 {
+margin: 5px 0 10px 10px; padding: 0;
+}
+
+div#comments .comment {
+  border: 0px;
+}
+
+div#comments .comment h3 {
+margin: 0 10px 0 10px; padding: 0;
+display: inline;
+}
+
+div#comments div.submitted {
+margin: 0 10px 0 10px; padding: 0;
+}
+
+div#comments div.content {
+margin: 10px 10px 10px 10px; padding: 0;
+}
+
+.comment-voting-controls span { margin: 0 5px 0 0; padding: 0; }
+
+.comment-promote a:link,.comment-promote a:visited {
+margin: 0; padding: 2px 5px 2px 5px;
+color: green;
+}
+
+.comment-promote a:hover,.comment-promote a:active {
+background: green; color: #f8f8f8;
+}
+
+.comment-bury a:link,.comment-bury a:visited {
+margin: 0; padding: 2px 5px 2px 5px;
+color: red;
+}
+
+.comment-bury a:hover,.comment-bury a:active {
+background: red; color: #f8f8f8;
+}
+
+div.comment-score-div { font-size: 90%; }
+
+/* Folded comments styles */
+
+div.comment-folded {
+background: #e7e7e7;
+margin: 10px;
+position: relative;
+border: 0px;
+padding: 0px;
+}
+
+div.comment-folded a.comment-folded {
+  border: 0px;
+  background: inherit;
+  padding: 0;
+}
+
+div.comment-folded div.comment-score-div {
+position: absolute;
+top: 0px;
+margin: 5px 0 0 0;
+right: 5px;
+}
+
+div.comment-folded span.subject {
+  margin: 0 0 0 10px;
+  padding: 0;
+  display: block;
+}
+
+div.comment-folded span.credit {
+  margin-left: 10px;
+}
